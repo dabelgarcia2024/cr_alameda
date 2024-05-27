@@ -1,0 +1,44 @@
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.frameParent {
+  display: flex;
+  align-items: center;
+}
+
+.vectorWrapper,
+.faceMediaIconsWrapper {
+  margin-right: 10px;
+}
+
+.vectorIcon,
+.faceMediaIcons,
+.instaMediaIcons {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.footerText {
+  font-size: 14px;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,34 @@
+.navCele {
+  /* Estilos para el contenedor principal de la sección de navegación */
+}
+
+.navCeleChild {
+  /* Estilos para el elemento de fondo de la sección */
+}
+
+.navCeleInner {
+  /* Estilos para el contenedor interior */
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  /* Estilos para la lista de enlaces de navegación */
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #000;
+}
+
+.maskGroupIcon {
+  /* Estilos para la imagen de fondo */
+}
+

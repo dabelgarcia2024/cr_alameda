@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #dca40a; /* Color de fondo del navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.frameParent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logoWrapper {
+  flex: 1;
+}
+
+.logoIcon {
+  width: 50%; /* Reduce el tamaño del logo a la mitad */
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  margin-left: 20px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: #000; /* Color del texto de los enlaces */
+  font-weight: bold;
+}

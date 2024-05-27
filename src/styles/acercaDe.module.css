@@ -1,0 +1,50 @@
+.acercaDe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 50%;
+  height: 50vw; /* This ensures the grid is square, assuming the width of the viewport is 100% */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+.textWrapper {
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 14px;
+  color: gray;
+}
+
+.description {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.description .text {
+  margin-bottom: 20px;
+}
