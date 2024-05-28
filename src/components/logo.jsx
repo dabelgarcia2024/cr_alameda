@@ -8,7 +8,7 @@ const Logo = ({ src, alt, className = "" }) => {
       className={styles.logoImg} 
       loading="lazy" 
       alt="logo celebremos"
-      src="/logo-celebremos-1@3x.png" 
+      src="/img/logo-celebremos-1@3x.png" 
       />
     </section>
   );

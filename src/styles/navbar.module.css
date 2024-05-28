@@ -2,23 +2,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #dca40a; /* Color de fondo del navbar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px 10px 15px;
+  background-color: #f16824; 
+  box-shadow: 0 1px 4px #e5e3e3;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .frameParent {
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: #ffffff;
+  padding: 1% 1%;
 }
-
 .logoWrapper {
   flex: 1;
 }
 
 .logoIcon {
-  width: 50%; /* Reduce el tamaño del logo a la mitad */
+  width: 40%; /* Reduce el tamaño del logo a la mitad */
   height: auto;
 }
 
@@ -36,11 +43,13 @@
 }
 
 .navList li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .navList li a {
   text-decoration: none;
   color: #000; /* Color del texto de los enlaces */
-  font-weight: bold;
+  font-weight:normal;
+
+
 }

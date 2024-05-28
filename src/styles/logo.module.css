@@ -1,16 +1,16 @@
 .logo {
-  background-color: orange;
+  background-color: #f16824;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Estilos generales para el contenedor del logo */
+ 
 }
 
 .logoImg {
   width: 40%;
-  height: auto;
-  /* Estilos específicos para la imagen del logo */
+  height: 70%;
+  
 }
 
 

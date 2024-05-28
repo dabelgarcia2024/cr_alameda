@@ -15,12 +15,12 @@ function Navbar({ className = "" }) {
         </div>
         <div className={styles.navigation}>
           <ul className={styles.navList}>
-            <li><a href="#dar">Dar</a></li>
-            <li><a href="#notas-del-mensaje">Notas del Mensaje</a></li>
-            <li><a href="#series">Series</a></li>
-            <li><a href="#oracion">Oración</a></li>
-            <li><a href="#tarjeta-de-conexion">Tarjeta de Conexión</a></li>
-            <li><a href="#mas">Más</a></li>
+            <li><a href="#dar">DAR</a></li>
+            <li><a href="#notas-del-mensaje">NOTAS DEL MENSAJE</a></li>
+            <li><a href="#series">SERIES</a></li>
+            <li><a href="#oracion">ORACIÓN</a></li>
+            <li><a href="#tarjeta-de-conexion">TARJETA DE CONEXIÓN</a></li>
+            <li><a href="#mas">MÁS</a></li>
           </ul>
         </div>
       </div>
