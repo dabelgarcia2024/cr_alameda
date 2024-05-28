@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/navbar.module.css";
 
 function Navbar({ className = "" }) {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <nav className={`${styles.navbar} ${className}`}>
       <div className={styles.frameParent}>
@@ -15,12 +21,21 @@ function Navbar({ className = "" }) {
         </div>
         <div className={styles.navigation}>
           <ul className={styles.navList}>
-            <li><a href="#dar">DAR</a></li>
-            <li><a href="#notas-del-mensaje">NOTAS DEL MENSAJE</a></li>
-            <li><a href="#series">SERIES</a></li>
-            <li><a href="#oracion">ORACIÓN</a></li>
-            <li><a href="#tarjeta-de-conexion">TARJETA DE CONEXIÓN</a></li>
-            <li><a href="#mas">MÁS</a></li>
+            <li><a href="https://alameda.ar/ofrenda">DAR</a></li>
+            <li><a href="https://alameda.ar/notas">NOTAS DEL MENSAJE</a></li>
+            <li><a href="https://alameda.ar/mensajes">SERIES</a></li>
+            <li><a href="https://alameda.ar/oracion">ORACIÓN</a></li>
+            <li><a href="https://alameda.ar/contacto">TARJETA DE CONEXIÓN</a></li>
+            <li className={styles.dropdown}>
+              <button onClick={toggleDropdown} className={styles.dropdownToggle}>
+                MÁS
+              </button>
+              {dropdownVisible && (
+                <ul className={styles.dropdownMenu}>
+                  <li className={styles.dropdownItem}><a href="https://alameda.ar/avanza">AVANZA</a></li>
+                </ul>
+              )}
+            </li>
           </ul>
         </div>
       </div>
@@ -29,3 +44,4 @@ function Navbar({ className = "" }) {
 }
 
 export default Navbar;
+
