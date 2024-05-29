@@ -50,6 +50,7 @@
   text-decoration: none;
   color: #000; /* Color del texto de los enlaces */
   font-weight:normal;
+  font-size: 14px;
 }
 
 .dropdown {
@@ -61,11 +62,11 @@
   border: none;
   color: inherit;
   cursor: pointer;
-  font-size: inherit;
+  font-size: 14px;
 }
 
 .dropdownMenu {
-  position: absolute;
+  position:absolute;
   top: 100%;
   left: 0;
   background-color: white;
@@ -73,17 +74,19 @@
   padding: 0;
   margin: 0;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
+  font-size: 14px;
 }
 
 .dropdownItem {
   padding: 0.5rem 1rem;
+  
 }
 
 .dropdownItem a {
   text-decoration: none;
   color: inherit;
-}
+  }
 
 .dropdownItem:hover {
   background-color: #ffffff;

@@ -44,4 +44,3 @@ function Navbar({ className = "" }) {
 }
 
 export default Navbar;
-
