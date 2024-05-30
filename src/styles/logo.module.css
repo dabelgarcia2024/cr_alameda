@@ -4,13 +4,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+ 
  
 }
 
 .logoImg {
   width: 40%;
   height: 70%;
-  
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  transition: transform 0.5s ease; /* Duración de la animación */
+   
 }
 
-
+.logo:hover .logoImg {
+  transform: scale(1.25); /* Aumenta el tamaño al 110% */
+}

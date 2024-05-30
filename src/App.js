@@ -13,7 +13,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Logo />
+      <Logo 
+        src="/img/logo-celebremos-1@3x.png" 
+        alt="Logo celebremos" 
+      />
       <NavCele />
       <section>
         <AcercaDe />
@@ -24,6 +27,7 @@ function App() {
     </div>
   );
 };
+
 
 export default App;
 

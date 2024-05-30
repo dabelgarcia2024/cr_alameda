@@ -5,10 +5,10 @@ const Logo = ({ src, alt, className = "" }) => {
   return (
     <section className={`${styles.logo} ${className}`}>
       <img 
-      className={styles.logoImg} 
-      loading="lazy" 
-      alt="logo celebremos"
-      src="/img/logo-celebremos-1@3x.png" 
+        className={styles.logoImg} 
+        loading="lazy" 
+        alt={alt} 
+        src={src} 
       />
     </section>
   );

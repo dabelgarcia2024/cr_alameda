@@ -15,11 +15,16 @@
 
 .frameParent {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   width: 100%;
   background-color: #ffffff;
   padding: 1% 1%;
+  box-shadow: 0 4px 8px #656060; /* Opcional: para añadir una sombra */
+  
 }
+
 .logoWrapper {
   flex: 1;
 }
@@ -38,6 +43,7 @@
 .navList {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -63,6 +69,9 @@
   color: inherit;
   cursor: pointer;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  font: inherit;
 }
 
 .dropdownMenu {
@@ -71,9 +80,12 @@
   left: 0;
   background-color: white;
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
-  display: block;
+  display: flex;
+  box-shadow: 0 4px 8px #0000001a;
+  border-radius: 4px;
+  flex-direction: column;
   border: 1px solid #ffffff;
   font-size: 14px;
 }
@@ -91,3 +103,4 @@
 .dropdownItem:hover {
   background-color: #ffffff;
 }
+
