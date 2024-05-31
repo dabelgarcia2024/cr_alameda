@@ -27,16 +27,14 @@ function Navbar({ className = "" }) {
             <li><a href="https://alameda.ar/oracion">ORACIÓN</a></li>
             <li><a href="https://alameda.ar/contacto">TARJETA DE CONEXIÓN</a></li>
             <li className={styles.dropdown}>
-            <div className={styles.logo1Wrapper}>
-                  <img
-            className={styles.logo1Icon}
-            loading="lazy"
-            alt="vector"
-            src="/img/angle-down-9-16.png"
-          />
-          </div>
               <button onClick={toggleDropdown} className={styles.dropdownToggle}>
-                MÁS 
+                <img
+                  className={styles.dropdownIcon}
+                  loading="lazy"
+                  alt="flecha hacia abajo"
+                  src="/img/angle-down-9-16.png"
+                />
+                MÁS
               </button>
               {dropdownVisible && (
                 <ul className={styles.dropdownMenu}>
@@ -49,7 +47,7 @@ function Navbar({ className = "" }) {
       </div>
     </nav>
   );
-};
-
+}
 
 export default Navbar;
+
