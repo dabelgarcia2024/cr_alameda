@@ -28,7 +28,7 @@ function Navbar({ className = "" }) {
             <li><a href="https://alameda.ar/contacto">TARJETA DE CONEXIÓN</a></li>
             <li className={styles.dropdown}>
               <button onClick={toggleDropdown} className={styles.dropdownToggle}>
-                <img
+              <img
                   className={styles.dropdownIcon}
                   loading="lazy"
                   alt="flecha hacia abajo"
@@ -50,4 +50,3 @@ function Navbar({ className = "" }) {
 }
 
 export default Navbar;
-
