@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/acercaDe.module.css';
 
+
 const sections = [
   {
     imgSrc: "/img/montzionnuevo-1@3x.png",
@@ -29,9 +30,10 @@ const sections = [
 function AcercaDe({ className = "" }) {
   return (
     <div className={`${styles.acercaDe} ${className}`}>
+      <img className={styles.backgroundImage} src='/img/adoracion@2x.png' alt="Adoracion" />
       <div className={styles.grid}>
         {sections.map((section, index) => (
-          <div key={index} className={styles.section}>
+          <div key={index} className={`${styles.section} ${index === 0 ? styles.pintada : ''}`}>
             <img className={styles.icon} alt={section.imgAlt} src={section.imgSrc} />
             {section.content.map((item, idx) => (
               <div key={idx} className={styles.textWrapper}>
@@ -42,11 +44,11 @@ function AcercaDe({ className = "" }) {
           </div>
         ))}
       </div>
-      <div className={styles.description}>
+      <div className={`${styles.description} ${styles.pintada}`}>
         <p className={styles.text}>
           Celebremos la Recuperación es un programa bíblico de 12 pasos, basado en
           las bienaventuranzas del libro de Mateo. Es para TODAS LAS PERSONAS que
-          esten pasando por alguna situación que les impida vivir su vida en plenitud.
+          estén pasando por alguna situación que les impida vivir su vida en plenitud.
         </p>
         <p className={styles.text}>
           El propósito de Celebremos la Recuperación es celebrar el poder sanador
