@@ -19,15 +19,21 @@ function App() {
       />
       <NavCele />
       <section>
-        <AcercaDe />
-        <EstudioDeLos12Pasos />
-        <Contactenos />
+        <div id="acerca-de">
+          <AcercaDe />
+        </div>
+        <div id="estudio-de-los-12-pasos">
+          <EstudioDeLos12Pasos />
+        </div>
+        <div id="contactenos">
+          <Contactenos />
+        </div>
       </section>
       <Footer />
     </div>
   );
 };
 
-
 export default App;
+
 

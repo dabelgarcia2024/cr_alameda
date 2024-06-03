@@ -1,34 +1,58 @@
 .navCele {
-  /* Estilos para el contenedor principal de la sección de navegación */
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .navCeleChild {
-  /* Estilos para el elemento de fondo de la sección */
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
 }
 
 .navCeleInner {
-  /* Estilos para el contenedor interior */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .navLinks {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  /* Estilos para la lista de enlaces de navegación */
+  gap: 20px;
 }
 
 .navLink {
-  color: #333;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navLink:hover {
-  color: #000;
+  color: #333;
+  font-size: 18px;
 }
 
 .maskGroupIcon {
-  /* Estilos para la imagen de fondo */
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scrollToTop:after {
+  content: "↑";
+  font-size: 20px;
+}

@@ -64,4 +64,3 @@ function AcercaDe({ className = "" }) {
 }
 
 export default AcercaDe;
-

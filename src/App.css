@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -36,3 +39,9 @@
     transform: rotate(360deg);
   }
 }
+
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
