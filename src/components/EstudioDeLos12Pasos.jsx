@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/EstudioDeLos12Pasos.module.css";
+import styles from "../styles/estudioDeLos12Pasos.module.css";
 
 const QuestionSection = ({ questionParts, imageSrc, altText }) => (
   <div className={styles.questionSection}>

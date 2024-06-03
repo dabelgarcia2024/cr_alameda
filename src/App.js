@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import Logo from "./components/logo";
+import Navbar from "./components/Navbar";
+import Logo from "./components/Logo";
 import NavCele from "./components/NavCele";
 import AcercaDe from "./components/AcercaDe";
 import EstudioDeLos12Pasos from "./components/EstudioDeLos12Pasos";
 import Contactenos from "./components/Contactenos";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import './styles/frame.module.css';
 import './App.css';
 

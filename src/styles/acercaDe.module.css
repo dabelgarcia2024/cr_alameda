@@ -1,4 +1,5 @@
 .acercaDe {
+  width: auto;
   background-color: #f16824;
   display: flex;
   flex-wrap: wrap;
@@ -10,14 +11,14 @@
 .backgroundImage {
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px; /* Espacio entre las secciones */
+  gap: 10px; /* Espacio entre las secciones */
   flex: 1;
   max-width: 50%;
 }
@@ -27,12 +28,36 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 5%;
 }
+
+/* Agrega clases para cada color */
+.red {
+  background-color: #eca711;
+  margin-top: 5%;
+
+  }
+
+.blue {
+  background-color: #ffffff ;
+  
+}
+
+.green {
+  background-color:  #ffffff;
+  margin-top: 5%;
+}
+
+.yellow {
+  background-color: #eca711;
+}
+
 
 .icon {
   width: auto;
   height: 80px;
   margin-bottom: 10px;
+  padding: 5%;
 }
 
 .textWrapper {
@@ -41,10 +66,12 @@
 }
 
 .text {
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
 .subtext {
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #000000;
 }
@@ -53,9 +80,14 @@
   flex: 1;
   max-width: 50%;
   padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .description .text {
   margin-bottom: 20px;
+  text-align: justify;
   font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  padding: 10px;
 }

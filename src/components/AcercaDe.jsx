@@ -1,29 +1,35 @@
 import React from 'react';
 import styles from '../styles/acercaDe.module.css';
 
-
 const sections = [
   {
     imgSrc: "/img/montzionnuevo-1@3x.png",
     imgAlt: "Mont Zion Nuevo",
     content: [
-      { text: "8 Principios ", subtext: "basados en las bienaventuranzas" },
+      { subtext: "8 Principios basados en las bienaventuranzas" },
     ],
+    color: "red", // Agrega el color deseado aquí
   },
-  {
-    imgSrc: "/img/biblenew-1@3x.png",
-    imgAlt: "Bible",
-    content: [{ text: "Programa ", subtext: "Cristocéntrico" }],
-  },
+  
   {
     imgSrc: "/img/footprint-1@3x.png",
     imgAlt: "Footprints",
-    content: [{ text: "12 pasos con sustento bíblico." }],
+    content: [{ subtext: "12 pasos con sustento bíblico." }],
+    color: "green", // Agrega el color deseado aquí
   },
+
+  {
+    imgSrc: "/img/biblenew-1@3x.png",
+    imgAlt: "Bible",
+    content: [{ subtext: "Programa Cristocéntrico" }],
+    color: "blue", // Agrega el color deseado aquí
+  },
+  
   {
     imgSrc: "/img/people-1@3x.png",
     imgAlt: "People with Hands Up",
-    content: [{ text: "Alcanzando libertad de nuestras heridas, adicciones y complejos." }],
+    content: [{ subtext: "Alcanzando libertad de nuestras heridas, adicciones y complejos." }],
+    color: "yellow", // Agrega el color deseado aquí
   },
 ];
 
@@ -33,7 +39,7 @@ function AcercaDe({ className = "" }) {
       <img className={styles.backgroundImage} src='/img/adoracion@2x.png' alt="Adoracion" />
       <div className={styles.grid}>
         {sections.map((section, index) => (
-          <div key={index} className={`${styles.section} ${index === 0 ? styles.pintada : ''}`}>
+          <div key={index} className={`${styles.section} ${styles[section.color]} ${index === 0 ? styles.pintada : ''}`}>
             <img className={styles.icon} alt={section.imgAlt} src={section.imgSrc} />
             {section.content.map((item, idx) => (
               <div key={idx} className={styles.textWrapper}>
@@ -66,3 +72,4 @@ function AcercaDe({ className = "" }) {
 }
 
 export default AcercaDe;
+

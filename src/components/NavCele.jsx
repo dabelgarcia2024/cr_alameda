@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/NavCele.module.css";
+import styles from "../styles/navCele.module.css";
 
 function NavCele({ className = "" }) {
   const scrollToTop = () => {
@@ -12,8 +12,7 @@ function NavCele({ className = "" }) {
   return (
     <nav className={className}>
       <section className={`${styles.navCele} ${className}`}>
-        <div className={styles.navCeleChild} />
-        <div className={styles.navCeleInner}>
+         <div className={styles.navCeleInner}>
           <div className={styles.navLinks}>
             <h2>
               <a href="#acerca-de" className={styles.navLink}>
