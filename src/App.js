@@ -8,6 +8,8 @@ import Contactenos from "./components/Contactenos";
 import Footer from "./components/Footer";
 import './styles/frame.module.css';
 import './App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -35,5 +37,3 @@ function App() {
 };
 
 export default App;
-
-

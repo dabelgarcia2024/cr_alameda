@@ -1,56 +1,63 @@
-.estudioDeLos12Pasos {
-  padding: 20px;
-  background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
-}
-
-.questionsContainer {
-  margin-bottom: 20px;
-}
+/* estudioDeLos12Pasos.module.css */
 
 .questionSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.textWrapper {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.question {
-  font-size: 18px;
-  margin: 0;
-}
-
-.answer {
-  font-size: 20px;
-  margin: 0;
-  font-weight: bold;
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
-  width: 100%;
-  max-width: 300px;
-  margin: 10px 0;
+  max-width: 50%;
+  margin-left: auto;
+}
+
+.description {
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 .studyInfoContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-top: 2em;
 }
 
-.description {
-  font-size: 16px;
-  margin: 10px 0;
+.questionsContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.subtitle {
-  font-size: 18px;
-  margin: 10px 0;
-  font-weight: bold;
+.App {
+  text-align: center;
+}
+
+.MotionContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.MotionInner {
+  position: absolute;
+  width: 100%;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 1em;
 }
