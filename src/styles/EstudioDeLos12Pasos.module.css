@@ -1,21 +1,26 @@
-/* estudioDeLos12Pasos.module.css */
-
-.questionSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.estudioDeLos12Pasos {
+  padding: 10px;
 }
 
-.contentWrapper {
+.questionsContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.studyInfoContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 2em;
 }
 
-.icon {
-  max-width: 50%;
-  margin-left: auto;
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .description {
@@ -28,36 +33,7 @@
   margin-top: 1em;
 }
 
-.studyInfoContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2em;
-}
-
-.questionsContainer {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.App {
-  text-align: center;
-}
-
-.MotionContainer {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.MotionInner {
-  position: absolute;
-  width: 100%;
-}
-
-.dots {
-  text-align: center;
-  margin-top: 1em;
+.icon {
+  max-width: 50%;
+  margin-left: auto;
 }

@@ -3,39 +3,11 @@ import CarouselSection from "./CarouselSection";
 import styles from "../styles/estudioDeLos12Pasos.module.css";
 
 function EstudioDeLos12Pasos({ className = "" }) {
-  const slides = [
-    {
-      questionParts: ['¿Has buscado soluciones,', 'pero no has encontrado', 'respuestas?'],
-      imageSrc: "/img/2sinsalida-1@2x.png",
-      altText: "Sin salida"
-    },
-    {
-      questionParts: ['¿Te gustaría gozar', 'de una vida plena?'],
-      imageSrc: "/img/2buscarespuestas-1@2x.png",
-      altText: "Busca respuestas"
-    },
-    {
-      questionParts: ['¿Estás viviendo', 'las consecuencias', 'de tus malas decisiones?'],
-      imageSrc: "/img/2luchando-1@2x.png",
-      altText: "Luchando"
-    },
-    {
-      questionParts: ['¿Estás harto de actuar', 'de la misma forma', 'repetidamente?'],
-      imageSrc: "/img/2diosnoseacuerda-1@2x.png",
-      altText: "Dios no se acuerda"
-    },
-    {
-      questionParts: ['¿Tienes problemas', 'familiares?'],
-      imageSrc: "/img/2cansado-1@2x.png",
-      altText: "Cansado"
-    }
-  ];
-
   return (
     <nav className={className}>
       <div className={`${styles.estudioDeLos12Pasos} ${className}`}>
         <div className={styles.questionsContainer}>
-          <CarouselSection slides={slides} />
+          <CarouselSection />
         </div>
         <div className={styles.studyInfoContainer}>
           <div className={styles.textWrapper}>
@@ -76,3 +48,4 @@ function EstudioDeLos12Pasos({ className = "" }) {
 }
 
 export default EstudioDeLos12Pasos;
+    
