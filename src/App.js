@@ -6,8 +6,9 @@ import AcercaDe from "./components/AcercaDe";
 import EstudioDeLos12Pasos from "./components/EstudioDeLos12Pasos";
 import Contactenos from "./components/Contactenos";
 import Footer from "./components/Footer";
+import CarouselBanner from './components/CarouselBanner';
 import './styles/frame.module.css';
-import './App.css';
+import './app.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -22,6 +23,7 @@ function App() {
       <NavCele />
       <section>
         <div id="acerca-de">
+        <CarouselBanner />
           <AcercaDe />
         </div>
         <div id="estudio-de-los-12-pasos">
