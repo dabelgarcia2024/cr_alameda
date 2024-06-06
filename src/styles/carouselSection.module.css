@@ -1,0 +1,41 @@
+/* carouselSection.module.css */
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carouselInner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carouselSlide {
+    background-color: blue;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+  }
+  
+  .contentWrapper {
+    text-align: center;
+  }
+  
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  

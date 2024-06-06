@@ -9,7 +9,11 @@
     "axios": "^1.7.2",
     "concurrently": "^8.2.2",
     "express": "^4.19.2",
+<<<<<<< HEAD
     "nodejs": "^0.0.0",
+=======
+    "framer-motion": "^11.2.10",
+>>>>>>> 8132580f1ebab4901d91d023aca7bae6966d2184
     "nodemailer": "^6.9.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
