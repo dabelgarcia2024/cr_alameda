@@ -4,46 +4,40 @@
   padding: 20px;
   font-family: Arial, sans-serif;
 }
+.imageContainer {
+  position: relative;
+}
 
 .backgroundImage {
   width: 100%;
   height: auto;
 }
 
-.messageContainer {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.introText {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.textArea {
-  width: 100%;
+.overlayText {
+  position: absolute;
+  bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
+  left: -100%; /* Comienza fuera de la pantalla, a la izquierda */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  resize: none;
+  text-align: center;
+  animation: slideInFromLeft 2s forwards;
+  white-space: nowrap; /* Asegura que el texto esté en una línea */
 }
 
-.submitButton {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+@keyframes slideInFromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
 }
 
-.submitButton:hover {
-  background-color: #0056b3;
-}
+
 
 .formContainer {
   text-align: left;
@@ -79,3 +73,20 @@
   height: auto;
   margin-top: 20px;
 }
+
+.submitButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+
