@@ -1,34 +1,48 @@
-/* carouselSection.module.css */
 .carouselContainer {
+  background-color: #ffffff;
   overflow: hidden;
-  width: max-content;
+  width: 100%;
   position: relative;
+  height: 100px;
 }
 
 .carouselInner {
   display: flex;
   width: max-content; /* Ajusta el ancho para contener todas las imágenes */
-  animation: scroll 40s linear infinite; /* Animación para el desplazamiento continuo */
+  animation: scroll 20s linear infinite; /* Animación para el desplazamiento continuo */
 }
 
 .carouselSlide {
-  min-width: 20%; /* Cada imagen ocupa el 20% del ancho total */
-  flex: 0 0 10%;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 25vw; /* O cualquier ancho máximo que prefieras */
+  box-sizing: border-box;
 }
 
 .contentWrapper {
+  display: flex;
+  background-color: #ffffff;
+  padding: 0px 8px 8px 0px;
+  max-width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
   text-align: center;
+  align-items: center;
+}
+
+.contentWrapper h1 {
+  margin: 0; /* Para eliminar el margen predeterminado del h1 */
 }
 
 .icon {
   max-width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-50%); } /* Ajusta para que vuelva a empezar a la mitad */
 }

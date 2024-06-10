@@ -45,17 +45,8 @@ const CarouselSection = () => {
         animate={{ x: ['0%', '-100%'] }}
         transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
       >
-        {slides.map((slide, index) => (
+        {slides.concat(slides).map((slide, index) => (
           <div key={index} className={styles.carouselSlide}>
-            <Content
-              text={slide.questionParts.join(" ")}
-              imageSrc={slide.imageSrc}
-              altText={slide.altText}
-            />
-          </div>
-        ))}
-        {slides.map((slide, index) => (
-          <div key={index + slides.length} className={styles.carouselSlide}>
             <Content
               text={slide.questionParts.join(" ")}
               imageSrc={slide.imageSrc}
