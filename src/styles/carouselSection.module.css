@@ -1,41 +1,34 @@
 /* carouselSection.module.css */
 .carouselContainer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carouselInner {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .carouselSlide {
-    background-color: blue;
-    height: 100%;
-    display:flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-  }
-  
-  .contentWrapper {
-    text-align: center;
-  }
-  
-  .icon {
-    width: 100%;
-    height: auto;
-  }
-  
-  .dots {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
+  overflow: hidden;
+  width: max-content;
+  position: relative;
+}
+
+.carouselInner {
+  display: flex;
+  width: max-content; /* Ajusta el ancho para contener todas las imágenes */
+  animation: scroll 40s linear infinite; /* Animación para el desplazamiento continuo */
+}
+
+.carouselSlide {
+  min-width: 20%; /* Cada imagen ocupa el 20% del ancho total */
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  text-align: center;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
