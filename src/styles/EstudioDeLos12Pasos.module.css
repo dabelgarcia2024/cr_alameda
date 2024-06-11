@@ -1,10 +1,10 @@
 .estudioDeLos12Pasos {
+  background-color: #f16824;
   padding: 10px;
 }
 
 .questionsContainer {
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -13,24 +13,34 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2em;
+  padding: 15px 5px;
 }
 
 .textWrapper {
   display: flex;
+  padding: 10px 40px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items:first baseline;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .description {
-  margin-bottom: 1em;
-  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .subtitle {
+  margin: 0;
+  padding: 5px;
   font-weight: bold;
-  margin-top: 1em;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  
 }
 
 .icon {
