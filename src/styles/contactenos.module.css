@@ -2,7 +2,62 @@
   background-color: #f16824;
   position: relative;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: auto;
+}
+
+.overlayText01 {
+  position: absolute;
+  bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
+  right: -100%; /* Comienza fuera de la pantalla, a la derecha */
+  color: #fffbf9;
+  padding: 10px;
+  text-align: right;
+  animation: slideInFromRight 10s forwards;
+  white-space: nowrap; /* Asegura que el texto esté en una línea */
+  font-family: "Monserrat", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+ }
+
+.overlayText02 {
+  position: absolute;
+  bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
+  right: -100%; /* Comienza fuera de la pantalla, a la derecha */
+  color: #f16824;
+  padding: 10px;
+  text-align: right;
+  animation: slideInFromRight 10s forwards;
+  white-space: nowrap; /* Asegura que el texto esté en una línea */
+  font-family: "Monserrat", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+ 
+}
+
+p {
+  margin:0;
+
+}
+
+@keyframes slideInFromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
 }
 .imageContainer {
   position: relative;
@@ -24,19 +79,6 @@
   animation: slideInFromLeft 2s forwards;
   white-space: nowrap; /* Asegura que el texto esté en una línea */
 }
-
-@keyframes slideInFromLeft {
-  0% {
-    left: -100%;
-    opacity: 0;
-  }
-  100% {
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 1;
-  }
-}
-
 
 
 .formContainer {
@@ -73,7 +115,6 @@
   height: auto;
   margin-top: 20px;
 }
-
 .submitButton {
   display: inline-block;
   padding: 10px 20px;
@@ -88,5 +129,3 @@
 .submitButton:hover {
   background-color: #0056b3;
 }
-
-
