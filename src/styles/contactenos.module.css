@@ -2,19 +2,15 @@
   background-color: #f16824;
   position: relative;
   padding: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family:"Montserrat", sans-serif;
+  width: 100%;
 }
 
 .imageContainer {
   position: relative;
 }
 
-.backgroundImage {
-  width: 100%;
-  height: auto;
-}
-
-.overlayText01 {
+.overlayText {
   position: absolute;
   bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
   right: -100%; /* Comienza fuera de la pantalla, a la derecha */
@@ -23,30 +19,31 @@
   text-align: right;
   animation: slideInFromRight 10s forwards;
   white-space: nowrap; /* Asegura que el texto esté en una línea */
-  font-family: "Monserrat", sans-serif;
-  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
+  font-size: 100px;
+  
  }
 
-.overlayText02 {
-  position: absolute;
-  bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
-  right: -100%; /* Comienza fuera de la pantalla, a la derecha */
-  color: #f16824;
-  padding: 10px;
-  text-align: right;
-  animation: slideInFromRight 10s forwards;
-  white-space: nowrap; /* Asegura que el texto esté en una línea */
-  font-family: "Monserrat", sans-serif;
+ .parrafoUno {
+  color: #ffffff;
   font-size: 100px;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
- 
+  font-weight: lighter;
+
+}
+
+.parrafoDos {
+  color: #f16824;;
+  font-size: 110px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 p {
   margin:0;
-
+  
 }
 
 @keyframes slideInFromRight {
@@ -59,37 +56,50 @@ p {
     opacity: 1;
   }
 }
-.imageContainer {
-  position: relative;
-}
 
 .backgroundImage {
   width: 100%;
   height: auto;
 }
 
-.overlayText {
-  position: absolute;
-  bottom: 10px; /* Posiciona el texto cerca de la base de la imagen */
-  left: -100%; /* Comienza fuera de la pantalla, a la izquierda */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  color: white;
-  padding: 10px;
-  text-align: center;
-  animation: slideInFromLeft 2s forwards;
-  white-space: nowrap; /* Asegura que el texto esté en una línea */
-}
-
-
 .formContainer {
-  text-align: left;
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  height: auto;
+    
 }
 
 .title {
-  font-size: 24px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 0;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.introText {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: normal;
   text-align: center;
+  width: 50%;
+
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los elementos */
+  
+}
+
+.right {
+  width: 50%;
+  background-color: #0056b3;
+  padding: 10px;
+  align-self: flex-start;
+
 }
 
 .field {
@@ -98,23 +108,18 @@ p {
 
 .label {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.footerImage {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
 .submitButton {
   display: inline-block;
   padding: 10px 20px;
