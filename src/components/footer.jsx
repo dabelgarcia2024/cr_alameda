@@ -20,7 +20,7 @@ function Footer({ className = "" }) {
               className={styles.faceMediaIcons}
               loading="lazy"
               alt=""
-              src="/face-media-icons-1@2x.png"
+              src="/img/face-media-icons-1@2x.png"
             />
           </div>
           <img className={styles.vectorIcon} alt="" src="/vector-1.svg" />

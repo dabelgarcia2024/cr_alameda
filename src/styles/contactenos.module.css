@@ -43,8 +43,7 @@
 
 p {
   margin:0;
-  
-}
+  }
 
 @keyframes slideInFromRight {
   0% {
@@ -61,63 +60,64 @@ p {
   width: 100%;
   height: auto;
 }
-
 .formContainer {
   display: flex;
   justify-content: space-between;
-  align-items:flex-start;
-  height: auto;
-    
+  align-items: flex-start;
+  gap: 20px; /* Opcional: espacio entre las columnas */
 }
 
+.left, .right {
+  flex: 1; /* Ambos contenedores ocupan el mismo espacio */
+  padding: 20px; /* Opcional: espacio interno para el contenido */
+  box-sizing: border-box;
+}
+.right {
+background-color: #ff8000;
+}
 .title {
+  margin:0;
   padding: 10px;
-  margin: 0;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 900;
-  text-align: left;
 }
 
 .introText {
-  padding: 10px;
-  font-size: 25px;
-  font-weight: normal;
-  text-align: center;
-  width: 50%;
-
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Espacio entre los elementos */
-  
-}
-
-.right {
-  width: 50%;
-  background-color: #0056b3;
-  padding: 10px;
-  align-self: flex-start;
-
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .field {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
-  display: block;
-  font-size: 20px;
   margin-bottom: 5px;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
 }
 
 .input {
-  width: 100%;
   padding: 10px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textArea {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .submitButton {
@@ -133,4 +133,14 @@ p {
 
 .submitButton:hover {
   background-color: #0056b3;
+}
+.contactenos::before {
+  content: "";
+  position:initial;
+  top: 0;
+  left: 0;
+  width: 100;
+  height: 100;
+  border-left: 10px solid transparent;
+  border-bottom: 400px solid #f8fd63;
 }
