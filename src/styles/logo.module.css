@@ -1,20 +1,18 @@
 .logo {
+  width: 100%;
   background-color: #f16824;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
- 
- 
+  overflow: hidden; 
 }
 
 .logoImg {
   width: 40%;
   height: 70%;
   object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
-  transition: transform 0.5s ease; /* Duración de la animación */
-   
+  transition: transform 0.5s ease; /* Duración de la animación */ 
 }
 
 .logo:hover .logoImg {

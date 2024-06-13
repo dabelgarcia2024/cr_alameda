@@ -3,50 +3,66 @@ import styles from "../styles/footer.module.css";
 
 function Footer({ className = "" }) {
   return (
-      <nav className={className}>
-          { <footer className={`${styles.footer} ${className}`}>
-      <div className={styles.footerInner}>
-        <div className={styles.frameParent}>
-          <div className={styles.vectorWrapper}>
-            <img
-              className={styles.vectorIcon}
-              loading="lazy"
-              alt=""
-              src="/vector.svg"
-            />
+    <nav className={className}>
+      <footer className={`${styles.footer} ${className}`}>
+        <div className={styles.footerInner}>
+          <div className={styles.iconRow}>
+            <div className={styles.iconWrapper}>
+              <a href="mailto:celebremosmdz@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img
+                  className={styles.icon}
+                  loading="lazy"
+                  alt="Email"
+                  src="/img/email-icons-1@3x.png"
+                />
+              </a>
+            </div>
+            <div className={styles.iconWrapper}>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img
+                  className={styles.icon}
+                  loading="lazy"
+                  alt="Facebook"
+                  src="/img/face-media-icons-1@3x.png"
+                />
+              </a>
+            </div>
+            <div className={styles.iconWrapper}>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img
+                  className={styles.icon}
+                  loading="lazy"
+                  alt="Instagram"
+                  src="/img/insta-media-icons-1@3x.png"
+                />
+              </a>
+            </div>
+            <div className={styles.iconWrapper}>
+              <a href="https://wa.me/2617457071" target="_blank" rel="noopener noreferrer">
+                <img
+                  className={styles.icon}
+                  loading="lazy"
+                  alt="WhatsApp"
+                  src="/img/whatsApp-icons-1@3x.png" // Asegúrate de tener esta imagen
+                />
+              </a>
+            </div>
           </div>
-          <div className={styles.faceMediaIconsWrapper}>
-            <img
-              className={styles.faceMediaIcons}
-              loading="lazy"
-              alt=""
-              src="/img/face-media-icons-1@2x.png"
-            />
-          </div>
-          <img className={styles.vectorIcon} alt="" src="/vector-1.svg" />
-          <img
-            className={styles.instaMediaIcons}
-            loading="lazy"
-            alt=""
-            src="/insta-media-icons-1@2x.png"
-          />
         </div>
-      </div>
-      <div className={styles.footerText}>
-        <span>© Copyright 2024 </span>
-        <a
-          className={styles.link}
-          href="https://alameda.ar/celebremos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.celebremosalameda.com
-        </a>
-        <span> - Todos los derechos reservados</span>
-      </div>
-    </footer>
-    }
-      </nav>
+        <div className={styles.footerText}>
+          <span>© Copyright 2024 </span>
+          <a
+            className={styles.link}
+            href="https://alameda.ar/celebremos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.celebremosalameda.com
+          </a>
+          <span> - Todos los derechos reservados</span>
+        </div>
+      </footer>
+    </nav>
   );
 }
 

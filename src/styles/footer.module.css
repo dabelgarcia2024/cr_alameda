@@ -1,5 +1,7 @@
 .footer {
+  width: 100%;
   background-color: #000000;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
@@ -12,9 +14,53 @@
 
 .footerInner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  flex-direction: column;
+ }
+
+.iconRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.iconWrapper {
+  flex: 1;
+  text-align: center;
+}
+
+
+.iconWrapper a {
+  display: inline-block;
+}
+
+
+.icon {
+  max-width: 20px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.footerText {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .frameParent {
@@ -30,21 +76,7 @@
 .vectorIcon,
 .faceMediaIcons,
 .instaMediaIcons {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   margin-right: 5px;
 }
-
-.footerText {
-  font-size: 14px;
-}
-
-.link {
-  color: blue;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
