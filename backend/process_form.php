@@ -12,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     } */
 
-    // Configurar el correo
+    /* // Configurar el correo
     $to = "celebremosmdz@gmail.com"; // Reemplaza con tu correo
     $subject = "Nuevo mensaje de contacto";
     $body = "Nombre: $name\nEmail: $email\nTeléfono: $phone\n\nMensaje:\n$message";
-    $headers = "From: $email";
+    $headers = "From: $email"; */
 
     // Enviar el correo
     if (mail($to, $subject, $body, $headers)) {
