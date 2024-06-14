@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #000000;
   color: #fff;
-  padding: 20px;
+  padding: 0px 10px 15px;
   text-align: center;
 }
 
@@ -13,6 +13,7 @@
 }
 
 .footerInner {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,24 +25,28 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
-}
+  padding: 0px 10px 15px;
+ }
 
 .iconWrapper {
   flex: 1;
   text-align: center;
 }
 
-
 .iconWrapper a {
   display: inline-block;
 }
 
+a {
+  height: 50px;
+  padding: 5px;
+}
+
 
 .icon {
-  max-width: 20px;
+  max-width: 30px;
   height: auto;
-  margin: 0 10px;
+  
 }
 
 .footerText {
@@ -61,22 +66,4 @@
 
 .link:hover {
   text-decoration: underline;
-}
-
-.frameParent {
-  display: flex;
-  align-items: center;
-}
-
-.vectorWrapper,
-.faceMediaIconsWrapper {
-  margin-right: 10px;
-}
-
-.vectorIcon,
-.faceMediaIcons,
-.instaMediaIcons {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
 }

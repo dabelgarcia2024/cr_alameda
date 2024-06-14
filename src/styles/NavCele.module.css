@@ -1,7 +1,7 @@
 .navCele {
   width: 100%;
   background-color: #f16824;
-  padding: 0;
+  padding: 0 10px 15px;
   align-items:center;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
 .navCeleInner {
   display: flex;
   width: 100%;
+  padding: 0px 10px 15px;
   justify-content: center;
   background-color: #000000;
   
