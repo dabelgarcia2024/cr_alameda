@@ -1,7 +1,7 @@
 .carouselContainer {
+  width: 100%;
   background-color: #ffffff;
   overflow: hidden;
-  width: 100%;
   position: relative;
   height: 100px;
 }
@@ -24,7 +24,7 @@
 .contentWrapper {
   display: flex;
   background-color: #ffffff;
-  padding: 0px 8px 8px 0px;
+  padding: 0px 10px 15px;
   max-width: 80%;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
