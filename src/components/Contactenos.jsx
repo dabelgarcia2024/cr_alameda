@@ -37,7 +37,8 @@ function Contactenos({ className = "" }) {
     .catch(error => {
       alert("Error al enviar el email: " + error.message);
     });
-    
+  };
+
   return (
     <div className={`${styles.contactenos} ${className}`}>
       <div className={styles.imageContainer}>
@@ -108,6 +109,6 @@ function Contactenos({ className = "" }) {
       </div>
     </div>
   );
-};
-};
+}
+
 export default Contactenos;
