@@ -10,26 +10,34 @@ function Contactenos({ className = "" }) {
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value
-    });
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value
+    }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const response = await fetch("/process_form.php", {
+    fetch("http://localhost/sendEmail.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
       body: new URLSearchParams(formData).toString()
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === "success") {
+        alert("Email enviado exitosamente.");
+      } else {
+        alert("Error al enviar el email: " + data.message);
+      }
+    })
+    .catch(error => {
+      alert("Error al enviar el email: " + error.message);
     });
-
-    const result = await response.text();
-    alert(result);
-  };
-
+    
   return (
     <div className={`${styles.contactenos} ${className}`}>
       <div className={styles.imageContainer}>
@@ -56,14 +64,43 @@ function Contactenos({ className = "" }) {
           <form onSubmit={handleSubmit}>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="name">Nombre y Apellido:</label>
-              <input className={styles.input} type="text" id="name" placeholder="Nombre y Apellido" value={formData.name} onChange={handleChange} />
+              <input
+                className={styles.input}
+                type="text"
+                id="name"
+                placeholder="Nombre y Apellido"
+                value={formData.name}
+                onChange={handleChange}
+              />
               <label className={styles.label} htmlFor="email">Email:</label>
-              <input className={styles.input} type="email" id="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+              <input
+                className={styles.input}
+                type="email"
+                id="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
               <label className={styles.label} htmlFor="phone">Teléfono:</label>
-              <input className={styles.input} type="tel" id="phone" placeholder="Teléfono" value={formData.phone} onChange={handleChange} />
+              <input
+                className={styles.input}
+                type="tel"
+                id="phone"
+                placeholder="Teléfono"
+                value={formData.phone}
+                onChange={handleChange}
+              />
             </div>
             <div className={styles.messageContainer}>
-              <textarea className={styles.textArea} id="message" rows={11} cols={22} placeholder="Tu mensaje aquí..." value={formData.message} onChange={handleChange} />
+              <textarea
+                className={styles.textArea}
+                rows={11}
+                cols={22}
+                id="message"
+                placeholder="Tu mensaje aquí..."
+                value={formData.message}
+                onChange={handleChange}
+              />
               <button className={styles.submitButton} type="submit">Enviar</button>
             </div>
           </form>
@@ -71,7 +108,6 @@ function Contactenos({ className = "" }) {
       </div>
     </div>
   );
-}
-
+};
+};
 export default Contactenos;
-
