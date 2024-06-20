@@ -3,6 +3,7 @@
   position: relative;
   padding: 0px 10px 15px;
   font-family:"Montserrat", sans-serif;
+  font-weight: 300;
   width: 100%;
 }
 
@@ -22,6 +23,7 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 100px;
+  font-weight: 500;
   
  }
 
@@ -65,6 +67,7 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px; /* Opcional: espacio entre las columnas */
+ 
 }
 
 .left, .right {
@@ -78,13 +81,13 @@ background-color: #ff8000;
 .title {
   margin:0;
   padding: 10px;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 900;
 }
 
 .introText {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 25px;
+  margin-top: 25px;
 }
 
 .field {
@@ -93,21 +96,23 @@ background-color: #ff8000;
   margin: 10px;
   display: flex;
   flex-direction: column;  
+  
 }
 
 .label {
   margin-bottom: 5px;
-  font-family: 'Monserrat', sans-serif;
-  font-weight: bold;
+  font-family: "Monserrat", sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 100;
+
 }
 
 .input {
   padding: 10px;
   margin-bottom: 15px;
-  font-size: 15px;
-  font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
+  font-family: "Monserrat", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -123,13 +128,16 @@ background-color: #ff8000;
 .textArea {
   padding: 10px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: 'Monserrat', sans-serif;
+  font-style:normal;
+  font-weight: 500;
 }
 
 .submitButton {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   background-color: #007bff;
   border: none;

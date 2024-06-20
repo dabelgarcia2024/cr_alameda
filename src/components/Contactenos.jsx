@@ -48,8 +48,9 @@ function Contactenos({ className = "" }) {
         <div className={styles.left}>
           <h2 className={styles.title}>Escríbenos, estamos para servirte.</h2>
           <p className={styles.introText}>
-            Permítenos servirte, mándanos un mensaje con tus preguntas o dudas,
+            Permítenos servirte, mándanos un mensaje con tus preguntas o dudas a traves del formulario o los íconos que se encuentran abajo,
             con gusto las responderemos a la brevedad posible.
+  
           </p>
         </div>
         <div className={styles.right}>
