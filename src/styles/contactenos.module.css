@@ -5,6 +5,8 @@
   font-family:"Montserrat", sans-serif;
   font-weight: 300;
   width: 100%;
+  overflow: hidden; /* Asegura que los elementos absolutamente posicionados no desborden el contenedor */
+
 }
 
 .imageContainer {
@@ -61,13 +63,31 @@ p {
 .backgroundImage {
   width: 100%;
   height: auto;
+  position: relative; /* Permanece en su lugar relativo al contenedor */
+  z-index: 1;
 }
+
 .formContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px; /* Opcional: espacio entre las columnas */
+<<<<<<< HEAD
  
+=======
+  position: relative;
+  z-index: 2; /* Establece z-index para que esté delante de la imagen de fondo */
+}
+
+.polygonImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0; /* Asegura que esté detrás del contenido */
+  
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .left, .right {
@@ -77,17 +97,33 @@ p {
 }
 .right {
 background-color: #ff8000;
+width: 50%;
 }
 .title {
   margin:0;
+<<<<<<< HEAD
   padding: 10px;
   font-size: 80px;
+=======
+  padding: 50px;
+  font-family:"Montserrat", sans-serif;
+  font-size: 75px;
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
   font-weight: 900;
+  text-align: left;
 }
 
 .introText {
+<<<<<<< HEAD
   font-size: 25px;
   margin-top: 25px;
+=======
+  font-family:"Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 50px;
+  margin-top: 10px;
+  text-align: left;
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .field {
@@ -96,6 +132,7 @@ background-color: #ff8000;
   margin: 10px;
   display: flex;
   flex-direction: column;  
+<<<<<<< HEAD
   
 }
 
@@ -106,14 +143,29 @@ background-color: #ff8000;
   font-size: 20px;
   font-weight: 100;
 
+=======
+  }
+
+.label {
+  margin-bottom: 5px;
+  font-family:"Montserrat", sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size: 20px;
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .input {
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 15px;
+<<<<<<< HEAD
   font-size: 20px;
   font-family: "Monserrat", sans-serif;
   font-weight: 100;
+=======
+  font-family: "Monserrat", sans-serif;
+  font-size: 20px;
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
   font-style: normal;
 }
 
@@ -126,15 +178,20 @@ background-color: #ff8000;
 }
 
 .textArea {
+  font-family:"Montserrat", sans-serif;
   padding: 10px;
   margin-bottom: 15px;
   font-size: 20px;
+<<<<<<< HEAD
   font-family: 'Monserrat', sans-serif;
   font-style:normal;
   font-weight: 500;
+=======
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .submitButton {
+  font-family:"Montserrat", sans-serif;
   display: inline-block;
   padding: 10px 20px;
   font-size: 20px;
@@ -150,11 +207,9 @@ background-color: #ff8000;
 }
 .contactenos::before {
   content: "";
-  position:initial;
-  top: 0;
-  left: 0;
+  position:absolute;
   width: 100;
   height: 100;
-  border-left: 10px solid transparent;
-  border-bottom: 400px solid #f8fd63;
+  z-index: -1; /* Asegura que esté detrás de todo el contenido */
+
 }

@@ -18,19 +18,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
  }
 
 .iconRow {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   width: 50%;
+=======
+  width: 75%;
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
   padding: 0px 10px 15px;
  }
 
 .iconWrapper {
   flex: 1;
   text-align: center;
+<<<<<<< HEAD
  
 }
 
@@ -44,14 +50,31 @@ a {
   padding: 5px;
   vertical-align: middle;
   margin:0;
+=======
+  align-items: center;
 }
 
+.iconWrapper a {
+  display: inline-block; 
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
+}
+
+a {
+  height: 50px;
+  padding: 5px;
+  
+}
 
 .icon {
   max-width: auto;
+<<<<<<< HEAD
   height: 80%;
   vertical-align: middle;
   margin:0; 
+=======
+  height: 75%;
+  
+>>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .footerText {
