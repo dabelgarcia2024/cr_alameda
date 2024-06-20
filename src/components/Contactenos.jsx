@@ -19,7 +19,7 @@ function Contactenos({ className = "" }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost/sendEmail.php", {
+    fetch("https://localhost/sendEmail.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
@@ -38,6 +38,7 @@ function Contactenos({ className = "" }) {
       alert("Error al enviar el email: " + error.message);
     });
   };
+  
 
   return (
     <div className={`${styles.contactenos} ${className}`}>
@@ -106,6 +107,14 @@ function Contactenos({ className = "" }) {
             </div>
           </form>
         </div>
+      </div>
+      <div className={styles.imagePolygon}>
+        <img
+          className={styles.polygonImage}
+          loading="lazy"
+          alt="polygon"
+          src="/img/polygon-1.svg"
+        />
       </div>
     </div>
   );

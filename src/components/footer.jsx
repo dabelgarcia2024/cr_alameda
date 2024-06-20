@@ -18,7 +18,7 @@ function Footer({ className = "" }) {
               </a>
             </div>
             <div className={styles.iconWrapper}>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=100068287325442" target="_blank" rel="noopener noreferrer">
                 <img
                   className={styles.icon}
                   loading="lazy"
@@ -28,7 +28,7 @@ function Footer({ className = "" }) {
               </a>
             </div>
             <div className={styles.iconWrapper}>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/cr_alameda" target="_blank" rel="noopener noreferrer">
                 <img
                   className={styles.icon}
                   loading="lazy"
@@ -38,7 +38,7 @@ function Footer({ className = "" }) {
               </a>
             </div>
             <div className={styles.iconWrapper}>
-              <a href="https://wa.me/2617457071" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2613070449" target="_blank" rel="noopener noreferrer">
                 <img
                   className={styles.icon}
                   loading="lazy"

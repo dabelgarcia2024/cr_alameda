@@ -18,34 +18,36 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
  }
 
 .iconRow {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 75%;
   padding: 0px 10px 15px;
  }
 
 .iconWrapper {
   flex: 1;
   text-align: center;
+  align-items: center;
 }
 
 .iconWrapper a {
-  display: inline-block;
+  display: inline-block; 
 }
 
 a {
   height: 50px;
   padding: 5px;
+  
 }
 
-
 .icon {
-  max-width: 30px;
-  height: auto;
+  max-width: auto;
+  height: 75%;
   
 }
 
