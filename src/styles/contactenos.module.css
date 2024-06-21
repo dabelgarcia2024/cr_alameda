@@ -72,9 +72,7 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px; /* Opcional: espacio entre las columnas */
-<<<<<<< HEAD
  
-=======
   position: relative;
   z-index: 2; /* Establece z-index para que esté delante de la imagen de fondo */
 }
@@ -87,7 +85,6 @@ p {
   height: auto;
   z-index: 0; /* Asegura que esté detrás del contenido */
   
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .left, .right {
@@ -101,29 +98,23 @@ width: 50%;
 }
 .title {
   margin:0;
-<<<<<<< HEAD
   padding: 10px;
   font-size: 80px;
-=======
   padding: 50px;
   font-family:"Montserrat", sans-serif;
   font-size: 75px;
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
   font-weight: 900;
   text-align: left;
 }
 
 .introText {
-<<<<<<< HEAD
   font-size: 25px;
   margin-top: 25px;
-=======
   font-family:"Montserrat", sans-serif;
   font-size: 25px;
   padding: 50px;
   margin-top: 10px;
   text-align: left;
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .field {
@@ -132,7 +123,6 @@ width: 50%;
   margin: 10px;
   display: flex;
   flex-direction: column;  
-<<<<<<< HEAD
   
 }
 
@@ -143,7 +133,6 @@ width: 50%;
   font-size: 20px;
   font-weight: 100;
 
-=======
   }
 
 .label {
@@ -152,20 +141,14 @@ width: 50%;
   font-weight:bold;
   font-style:normal;
   font-size: 20px;
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .input {
   padding: 20px;
   margin-bottom: 15px;
-<<<<<<< HEAD
   font-size: 20px;
   font-family: "Monserrat", sans-serif;
   font-weight: 100;
-=======
-  font-family: "Monserrat", sans-serif;
-  font-size: 20px;
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
   font-style: normal;
 }
 
@@ -182,12 +165,9 @@ width: 50%;
   padding: 10px;
   margin-bottom: 15px;
   font-size: 20px;
-<<<<<<< HEAD
   font-family: 'Monserrat', sans-serif;
   font-style:normal;
   font-weight: 500;
-=======
->>>>>>> c5779d4063d6f8190521f6039a7d5b0404f937cd
 }
 
 .submitButton {
