@@ -4,10 +4,10 @@ import axios from '../services/axiosConfig'; // Ruta al archivo axiosConfig.js
 const MyComponent = () => {
   const handleEmailSend = async () => {
     try {
-      const response = await axios.post('send_email.php', {
-        to: 'correo@example.com',
-        subject: 'Asunto del correo',
-        message: 'Mensaje del correo',
+      const response = await axios.post('sendEmail.php', {
+        to: 'fullstackmendoza@gmail.com',
+        subject:'Bienvenido',
+        message: 'Gracias por comunicarse con nosotros',
       });
       console.log(response.data);
     } catch (error) {
@@ -18,7 +18,7 @@ const MyComponent = () => {
   const handleWhatsAppSend = async () => {
     try {
       const response = await axios.post('send_whatsapp.php', {
-        to: 'número_de_teléfono',
+        to: '+5492617457570',
         message: 'Mensaje de WhatsApp',
       });
       console.log(response.data);
